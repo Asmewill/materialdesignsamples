@@ -1,20 +1,18 @@
 package com.zhouwei.md.materialdesignsamples.bottomsheetdialog;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zhouwei.md.materialdesignsamples.R;
 
@@ -27,6 +25,7 @@ import java.util.List;
 
 public class BottomSheetDialogActivity extends AppCompatActivity implements View.OnClickListener{
     private BottomSheetDialog mBottomSheetDialog;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,33 +71,40 @@ public class BottomSheetDialogActivity extends AppCompatActivity implements View
      * share Dialog
      */
     private void showShareDialog(){
-        if(mBottomSheetDialog == null){
-            mBottomSheetDialog = new BottomSheetDialog(this);
-            View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_share_dialog,null);
-            mBottomSheetDialog.setContentView(view);
-            mBottomSheetDialog.setCancelable(true);
-            mBottomSheetDialog.setCanceledOnTouchOutside(true);
-            // 解决下滑隐藏dialog 后，再次调用show 方法显示时，不能弹出Dialog
-            View view1 = mBottomSheetDialog.getDelegate().findViewById(android.support.design.R.id.design_bottom_sheet);
-            final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(view1);
-            bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
-                @Override
-                public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                    if (newState == BottomSheetBehavior.STATE_HIDDEN) {
-                        Log.i("BottomSheet","onStateChanged");
-                        mBottomSheetDialog.dismiss();
-                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-                    }
-                }
 
-                @Override
-                public void onSlide(@NonNull View bottomSheet, float slideOffset) {
-
-                }
-            });
-        }else{
-            mBottomSheetDialog.show();
-        }
+        mBottomSheetDialog = new BottomSheetDialog(this);
+        View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_share_dialog,null);
+        mBottomSheetDialog.setContentView(view);
+        mBottomSheetDialog.setCancelable(true);
+        mBottomSheetDialog.setCanceledOnTouchOutside(true);
+        mBottomSheetDialog.show();
+//        if(mBottomSheetDialog == null){
+//            mBottomSheetDialog = new BottomSheetDialog(this);
+//            View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_share_dialog,null);
+//            mBottomSheetDialog.setContentView(view);
+//            mBottomSheetDialog.setCancelable(true);
+//            mBottomSheetDialog.setCanceledOnTouchOutside(true);
+//            // 解决下滑隐藏dialog 后，再次调用show 方法显示时，不能弹出Dialog
+//            View view1 = mBottomSheetDialog.getDelegate().findViewById(android.support.design.R.id.design_bottom_sheet);
+//            final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(view1);
+//            bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+//                @Override
+//                public void onStateChanged(@NonNull View bottomSheet, int newState) {
+//                    if (newState == BottomSheetBehavior.STATE_HIDDEN) {
+//                        Log.i("BottomSheet","onStateChanged");
+//                        mBottomSheetDialog.dismiss();
+//                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+//                    }
+//                }
+//
+//                @Override
+//                public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+//
+//                }
+//            });
+//        }else{
+//            mBottomSheetDialog.show();
+//        }
 
     }
 
@@ -171,13 +177,21 @@ public class BottomSheetDialogActivity extends AppCompatActivity implements View
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            MusicViewHolder musicViewHolder = (MusicViewHolder) holder;
+            final MusicViewHolder musicViewHolder = (MusicViewHolder) holder;
 
-            MusicInfo musicInfo = mData.get(position);
+            final MusicInfo musicInfo = mData.get(position);
 
             musicViewHolder.name.setText(musicInfo.name);
 
             musicViewHolder.singer.setText(musicInfo.singer);
+            musicViewHolder.ll_content.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(musicViewHolder.ll_content.getContext(),musicInfo.name,Toast.LENGTH_LONG).show();
+                }
+            });
+
+
         }
 
         @Override
@@ -188,10 +202,12 @@ public class BottomSheetDialogActivity extends AppCompatActivity implements View
         public static class MusicViewHolder extends RecyclerView.ViewHolder{
             public TextView name;
             public TextView singer;
+            public View ll_content;
             public MusicViewHolder(View itemView) {
                 super(itemView);
                 name = (TextView) itemView.findViewById(R.id.music_name);
                 singer = (TextView) itemView.findViewById(R.id.music_singer);
+                ll_content=itemView.findViewById(R.id.ll_content);
             }
         }
     }
