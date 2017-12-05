@@ -1,3 +1,6 @@
+###我自己写的简书博客：http://www.jianshu.com/p/50f37aa61911
+
+
 ### Material Design 系列 Samples (持续更新中...)
 这个Demo是一个关于Android material Design 控件的一些使用示例，会持续更新。
 示例截图：
