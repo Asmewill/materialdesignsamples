@@ -71,40 +71,12 @@ public class BottomSheetDialogActivity extends AppCompatActivity implements View
      * share Dialog
      */
     private void showShareDialog(){
-
         mBottomSheetDialog = new BottomSheetDialog(this);
         View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_share_dialog,null);
         mBottomSheetDialog.setContentView(view);
         mBottomSheetDialog.setCancelable(true);
         mBottomSheetDialog.setCanceledOnTouchOutside(true);
         mBottomSheetDialog.show();
-//        if(mBottomSheetDialog == null){
-//            mBottomSheetDialog = new BottomSheetDialog(this);
-//            View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_share_dialog,null);
-//            mBottomSheetDialog.setContentView(view);
-//            mBottomSheetDialog.setCancelable(true);
-//            mBottomSheetDialog.setCanceledOnTouchOutside(true);
-//            // 解决下滑隐藏dialog 后，再次调用show 方法显示时，不能弹出Dialog
-//            View view1 = mBottomSheetDialog.getDelegate().findViewById(android.support.design.R.id.design_bottom_sheet);
-//            final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(view1);
-//            bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
-//                @Override
-//                public void onStateChanged(@NonNull View bottomSheet, int newState) {
-//                    if (newState == BottomSheetBehavior.STATE_HIDDEN) {
-//                        Log.i("BottomSheet","onStateChanged");
-//                        mBottomSheetDialog.dismiss();
-//                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-//                    }
-//                }
-//
-//                @Override
-//                public void onSlide(@NonNull View bottomSheet, float slideOffset) {
-//
-//                }
-//            });
-//        }else{
-//            mBottomSheetDialog.show();
-//        }
 
     }
 

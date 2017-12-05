@@ -2,8 +2,10 @@ package com.zhouwei.md.materialdesignsamples.toolbar;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.adapter.CBPageAdapter;
@@ -64,7 +67,6 @@ public class JanshuActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(myAdapter);
         myAdapter.setData(mockData());
         myAdapter.notifyDataSetChanged();
-
         mConvenientBanner.setPages(new CBViewHolderCreator<NetworkImageHolderView>() {
             @Override
             public NetworkImageHolderView createHolder() {
@@ -80,6 +82,20 @@ public class JanshuActivity extends AppCompatActivity {
                 }else{
                     mLine.setVisibility(View.GONE);
                 }
+            }
+        });
+        final SwipeRefreshLayout swipe_layout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
+        swipe_layout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getApplicationContext(),"refresh",Toast.LENGTH_LONG).show();
+                        swipe_layout.setRefreshing(false);
+                    }
+                },2000);
             }
         });
     }

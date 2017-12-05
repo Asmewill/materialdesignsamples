@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ /*
   ~  *
   ~  *  *
@@ -23,15 +24,14 @@
             1.界面向上滚动逐渐隐藏Toolbar；
             2.在其中可以放置浮动的View，就像Floating Action Button。
 -->
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/id_coordinatorlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     >
-
-
   <!--
       AppBarLayout跟它的名字一样，把容器类的组件全部作为AppBar。
           将AppBarLayout放在CoordinatorLayout中，就可以实现滚动效果。
@@ -107,7 +107,6 @@
       android:layout_height="wrap_content"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
       />
-
 
   <!--
       这是一个浮动按钮。由于FloatingActionButton是重写ImageView的，

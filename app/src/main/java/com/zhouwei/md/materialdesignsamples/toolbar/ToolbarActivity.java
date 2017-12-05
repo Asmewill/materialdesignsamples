@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.zhouwei.md.materialdesignsamples.R;
 
@@ -72,7 +73,8 @@ public class ToolbarActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.item_setting:
+                    case R.id.item_collect:
+                        Toast.makeText(getApplicationContext(),"收藏",Toast.LENGTH_SHORT).show();
                         //点击设置
                         break;
                 }
@@ -98,8 +100,9 @@ public class ToolbarActivity extends AppCompatActivity implements View.OnClickLi
            @Override
            public boolean onMenuItemClick(MenuItem item) {
                switch (item.getItemId()){
-                   case R.id.item_setting:
+                   case R.id.item_collect:
                        //点击设置菜单
+                       Toast.makeText(getApplicationContext(),"收藏",Toast.LENGTH_SHORT).show();
                        break;
                }
                return false;

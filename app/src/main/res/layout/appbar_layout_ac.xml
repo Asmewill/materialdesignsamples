@@ -9,16 +9,7 @@
            android:id="@+id/appbar_layout"
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
-<!--
-               <android.support.v7.widget.Toolbar
-                   android:layout_width="match_parent"
-                   android:layout_height="200dp"
-                   android:minHeight="?attr/actionBarSize"
-                   app:title="AppbarLayout"
-                   android:gravity="bottom"
-                   app:titleTextColor="@color/white"
-                   app:layout_scrollFlags="scroll|snap"
-                   />-->
+
            <android.support.design.widget.CollapsingToolbarLayout
                android:id="@+id/collapse_layout"
                android:layout_width="match_parent"
@@ -43,11 +34,10 @@
                    app:navigationIcon="@mipmap/navigation_back_white"
                    app:layout_collapseMode="pin"
                    />
-               //parallax ：视差模式和设置成none类似
+                //parallax ：视差模式和设置成none类似(一般不用)
                //“pin”：固定模式，在折叠的时候最后将所有的内容，包括title，左边返回键，右边菜单键都固定在顶端；
                //exitUntilCollapsed:向上滚动中间包裹内容渐渐退出屏幕，toolbar最后折叠在顶端。滑动返回为去掉toolbar的高度
                //enterAlways:设置这个flag时，向上滚动时候，整个CollapsingToolbarLayout退出屏幕，当向下的滚动都会导致整个CollapsingToolbarLayout先变为可见，然后才能开始下滑”//滑动范围为整个CollapsingToolbarLayout的高度
-              // ToolBar被折叠到顶部固定时候的背景，我们可以通过代码调用setContentScrim(Drawable)方法改变背景或者在属性中使用app:contentScrim=”?attr/colorPrimary”来改变背景。
                //scroll:所有想滚动出屏幕的view都需要设置这个flag，没有设置这个flag的view将被固定在屏幕顶部
            </android.support.design.widget.CollapsingToolbarLayout>
 

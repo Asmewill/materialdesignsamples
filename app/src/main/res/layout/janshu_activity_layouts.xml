@@ -6,7 +6,6 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
   <android.support.design.widget.AppBarLayout
       android:id="@+id/jianshu_appbar_layout"
       android:layout_width="match_parent"
@@ -104,13 +103,17 @@
         android:visibility="gone"
         />
   </android.support.design.widget.AppBarLayout>
-
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/vertical_recyclerView"
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@color/white"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior"
-      />
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vertical_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
 
+        />
+  </android.support.v4.widget.SwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>
