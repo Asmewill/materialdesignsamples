@@ -52,14 +52,14 @@
              android:id="@+id/btn_appbar_layout3"
              android:layout_width="match_parent"
              android:layout_height="50dp"
-             android:text="AppbarLayout 实践之仿网贷之家折叠ToolBar(一)"
+             android:text="AppbarLayout 实践之仿网贷之家折叠ToolBar(一)(SwipeLayout下拉刷新)"
              android:gravity="center"
              />
          <TextView
              android:id="@+id/btn_appbar_layout4"
              android:layout_width="match_parent"
              android:layout_height="50dp"
-             android:text="AppbarLayout 实践之仿网贷之家折叠ToolBar(二)"
+             android:text="AppbarLayout 实践之仿网贷之家折叠ToolBar(二)(BGARefresh下拉刷新)"
              android:gravity="center"
              />
          <TextView
@@ -134,6 +134,14 @@
              android:layout_width="match_parent"
              android:layout_height="50dp"
              android:text=" BottomNavigationView示例"
+             android:gravity="center"
+             />
+
+         <TextView
+             android:id="@+id/tv_ani"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="水波纹背景延展动画"
              android:gravity="center"
              />
 

@@ -42,6 +42,7 @@
       android:id="@+id/id_appbarlayout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:background="@color/DarkCyan"
       >
 
 
@@ -63,6 +64,15 @@
         需要注意的是，后面两种模式基本只有在CollapsingToolbarLayout才有用，
         而前面两种模式基本是需要一起使用的，也就是说，这些flag的使用场景，基本已经固定了。
     -->
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:inputType=""
+        android:background="@color/white"/>
     <android.support.v7.widget.Toolbar
         android:id="@+id/id_toolbar"
         android:layout_width="match_parent"
@@ -72,6 +82,7 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:title="@string/toolbar_title"
+        android:visibility="gone"
         />
 
     <!--
@@ -90,9 +101,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabGravity="fill"
+        app:layout_scrollFlags="scroll|enterAlways"
         app:tabIndicatorColor="@color/main_white"
         />
 
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent">
+
+    </HorizontalScrollView>
   </android.support.design.widget.AppBarLayout>
 
   <!--

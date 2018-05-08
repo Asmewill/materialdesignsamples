@@ -1,5 +1,7 @@
 package com.zhouwei.md.materialdesignsamples.asmewill;
 
+import android.animation.Animator;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -12,11 +14,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewAnimationUtils;
+import android.view.animation.AccelerateInterpolator;
+import android.widget.Toast;
 
 import com.zhouwei.md.materialdesignsamples.R;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +38,7 @@ import static android.support.design.widget.TabLayout.MODE_SCROLLABLE;
 public class WdzjActivity extends AppCompatActivity  implements ViewPager.OnPageChangeListener,View.OnClickListener{
 
 
+    private static final String TAG ="WdzjActivity" ;
     //初始化各种控件，照着xml中的顺序写
     private DrawerLayout mDrawerLayout;
     private CoordinatorLayout mCoordinatorLayout;
@@ -47,6 +55,7 @@ public class WdzjActivity extends AppCompatActivity  implements ViewPager.OnPage
     private List<Fragment> mFragments;
     // ViewPager的数据适配器
     private MyViewPagerAdapter mViewPagerAdapter;
+    private int[] colorIds=new int[]{R.color.DarkCyan,R.color.colorHint,R.color.orange,R.color.main_blue_light,R.color.colorAccent};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +121,7 @@ public class WdzjActivity extends AppCompatActivity  implements ViewPager.OnPage
 
         // 设置FloatingActionButton的点击事件
         mFloatingActionButton.setOnClickListener(this);
+
     }
 
 
@@ -120,22 +130,62 @@ public class WdzjActivity extends AppCompatActivity  implements ViewPager.OnPage
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+        //Log.e(TAG,"positionOffset:"+positionOffset+"----positionOffsetPixels:"+positionOffsetPixels);
 
     }
 
     @Override
     public void onPageSelected(int position) {
+        mAppBarLayout.setBackgroundResource(colorIds[position]);
+        View childView= getTabView(position);
+        if(childView!=null){
+            Log.e(TAG,"leftMargin:"+childView.getLeft());
+            int leftMargin=childView.getLeft();
+            if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+                Animator rectAni = ViewAnimationUtils.createCircularReveal(
+                        mAppBarLayout,
+                        leftMargin+childView.getWidth()/2,
+                        mAppBarLayout.getHeight()-50,
+                        200,
+                        (float)mAppBarLayout.getHeight());
+                rectAni.setInterpolator(new AccelerateInterpolator());
+                rectAni.setDuration(150);
+                rectAni.start();
+            }else{
+                Toast.makeText(getApplicationContext(), "手机版本小于5.0,无法显示该动画，请更新系统！", Toast.LENGTH_SHORT).show();
+            }
+        }
+
 
     }
 
     @Override
     public void onPageScrollStateChanged(int state) {
 
+
     }
 
     @Override
     public void onClick(View v) {
 
+    }
+
+    public View getTabView(int index){
+        View tabView = null;
+        TabLayout.Tab tab = mTabLayout.getTabAt(index);
+        Field view = null;
+        try {
+            view = TabLayout.Tab.class.getDeclaredField("mView");
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+        view.setAccessible(true);
+        try {
+            tabView = (View) view.get(tab);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return tabView;
     }
 
 

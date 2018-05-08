@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.zhouwei.md.materialdesignsamples.asmewill.BDTieBaActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.BoWenAnimationActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjBGARefreshActivity;
 import com.zhouwei.md.materialdesignsamples.behavoir.BottomSheetBehaviorActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.card_view_simple).setOnClickListener(this);
         findViewById(R.id.btn_appbar_layout3).setOnClickListener(this);
         findViewById(R.id.btn_appbar_layout4).setOnClickListener(this);
+        findViewById(R.id.tv_ani).setOnClickListener(this);
     }
 
     @Override
@@ -122,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case  R.id.bottom_navigaiton_simple:
                 intent = new Intent(this, BottomNavigationActivity.class);
+                startActivity(intent);
+                break;
+            case  R.id.tv_ani:
+                intent = new Intent(this, BoWenAnimationActivity.class);
                 startActivity(intent);
                 break;
 
