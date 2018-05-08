@@ -8,7 +8,7 @@
 
 ![samples.gif](material_design_simples.gif)
 
-a.gif
+![a.gif](a.gif)
 
 目前包含以下一些控件的使用：
 
