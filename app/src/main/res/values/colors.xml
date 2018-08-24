@@ -26,4 +26,71 @@
     <color name="main_black">#000000</color>
     <color name="main_black_grey">#6D6D6D</color>
     <color name="fab_red">#ff0000</color>
+
+    <color name="cffffff">#FFFFFF</color>
+    <color name="c444444">#444444</color>
+    <color name="c000000">#000000</color>
+    <color name="c4b89dc">#4b89dc</color>
+    <color name="cbdbdbd">#dbdbdb</color>
+    <color name="c5d9cec">#5d9cec</color>
+    <color name="ceeeeee">#eeeeee</color>
+    <color name="c212121">#212121</color>
+    <color name="c333">#333333</color>
+    <color name="c080808">#080808</color>
+    <color name="c424242">#424242</color>
+    <color name="c3f3f3f">#3f3f3f</color>
+    <color name="cbababa">#bababa</color>
+    <color name="c525252">#525252</color>
+    <color name="c696969">#696969</color>
+    <color name="c919191">#919191</color>
+    <color name="c9e9e9e">#9e9e9e</color>
+    <color name="cececec">#ececec</color>
+    <color name="cf3f3f3">#f3f3f3</color>
+    <color name="ce95c63">#e95c63</color>
+
+    <color name="ced5564">#f1453d</color>
+    <color name="ce50038">#e50038</color>
+    <color name="cf1453d">#f1453d</color>
+    <color name="cf7f7f7">#f7f7f7</color>
+    <color name="ce50011">#f1453d</color>
+    <color name="color_list_item_text_selected">#f1453d</color>
+    <color name="category_light">#f1453d</color>
+    <color name="category_yello">#fdd266</color>
+    <color name="category_blue">#54b1f2</color>
+    <color name="cdbdbdb">#dbdbdb</color>
+    <color name="c666666">#666666</color>
+    <color name="cadadad">#adadad</color>
+    <color name="cc9c9c9">#c9c9c9</color>
+
+    <color name="category_type">#9e9e9e</color>
+    <color name="category_goods">#424242</color>
+
+    <color name="pkg_sold_out_bg">#f8f8f8</color>
+
+    <color name="gray_bg">#f3f3f3</color>
+    <color name="fake_translucent">#01000000</color>
+
+    <!-- zuobiao.zhou <<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <!--<color name="white">#FFFFFF</color>-->
+    <!--<color name="black">#000000</color>-->
+    <!-- zuobiao.zhou >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <color name="line">#DBDBDB</color>
+
+    <color name="goods_buy_gray">#9e9e9e</color>
+
+    <color name="goods_add_cart_gray">#DBDBDB</color>
+    <color name="goods_add_cart">#ffcd45</color>
+
+    <color name="promotion_discount">#ffcd45</color>
+    <color name="transsite_half">#88333333</color>
+    <color name="c55e8fb">#55e8fb</color>
+
+
+    <!-- zuobiao.zhou <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- zuobiao.zhou >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <color name="item_decoration_title_background">#f3f3f3</color>
+    <color name="item_decoration_title_fontcolor">#9e9e9e</color>
 </resources>

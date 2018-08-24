@@ -91,6 +91,17 @@
             android:theme="@style/MDTheme"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
+        <activity
+            android:name=".asmewill.SlidingUpPanelActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".asmewill.BtnUpByKeyBoardActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
     </application>
 
 </manifest>

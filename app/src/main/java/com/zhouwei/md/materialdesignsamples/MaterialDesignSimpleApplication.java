@@ -39,6 +39,7 @@ public class MaterialDesignSimpleApplication extends Application {
         ImageLoader.getInstance().init(configuration);
 
         sContext = this.getApplicationContext();
+        com.blankj.utilcode.util.Utils.init(this);
     }
 
     public static Context getAppContext(){

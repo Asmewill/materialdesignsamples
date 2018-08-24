@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/join"
+            android:textColor="@color/category_light"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/t_join"
+            android:textSize="17sp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/forgotPwd"
+            android:textColor="@color/category_light"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/forgot_password"
+            android:textSize="17sp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--
+      remember:
+    1.使用ScrollView是CardView登录View可以被键盘弹起的关键所在，
+    2.如果直接使用LinearLayout，CardView登录View不会被弹起，切记
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+       >
+        <!--
+        remember:
+        1.android:paddingBottom="136dp"是ScrollView可以滑动的关键
+        -->
+        <LinearLayout
+            android:id="@+id/editArea"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="136dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/author"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/please_enter"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/please_enter"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/sv"-->
+        <!--android:layout_below="@id/topBar"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:scrollbarStyle="outsideOverlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="136dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp" />-->
+            <!--<TextView-->
+                <!--android:textSize="30sp"-->
+                <!--android:id="@+id/loginTitle"-->
+                <!--android:text="@string/login_uppper"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/editArea"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:hint="@string/please_enter"/>-->
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:hint="@string/please_enter"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/expandableLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="320dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--app:ael_duration="350"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="fastOutSlowIn"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/recyclerView"-->
+                        <!--android:layout_marginTop="32dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:scrollbars="vertical" />-->
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+            <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/buttonArea"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/category_light"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/login"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/bt_login" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/line_statement"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonArea"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/tv_login_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_chana"
+            android:textColor="@color/c525252"
+            android:textSize="@dimen/sp_11"
+            />
+        <TextView
+            android:id="@+id/tv_login_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/about_eagtee_global"
+            android:textColor="@color/cbababa"
+            android:textSize="@dimen/sp_9"
+            android:paddingTop="@dimen/dp_10"
+            android:clickable="true"
+            android:paddingBottom="@dimen/dp_10"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

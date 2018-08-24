@@ -17,6 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -33,4 +34,13 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+    //工具类
+    compile 'com.blankj:utilcode:1.9.10'
+    //expandable-layout
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    //keyboardvisibilityevent
+    compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
 }
+
+

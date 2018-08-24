@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.zhouwei.md.materialdesignsamples.asmewill.BDTieBaActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.BoWenAnimationActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.BtnUpByKeyBoardActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.SlidingUpPanelActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjBGARefreshActivity;
 import com.zhouwei.md.materialdesignsamples.behavoir.BottomSheetBehaviorActivity;
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_appbar_layout3).setOnClickListener(this);
         findViewById(R.id.btn_appbar_layout4).setOnClickListener(this);
         findViewById(R.id.tv_ani).setOnClickListener(this);
+        findViewById(R.id.tv_sliing_up_panel).setOnClickListener(this);
+        findViewById(R.id.btn_up_by_keyboard).setOnClickListener(this);
     }
 
     @Override
@@ -128,6 +132,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case  R.id.tv_ani:
                 intent = new Intent(this, BoWenAnimationActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_sliing_up_panel:
+                intent = new Intent(this, SlidingUpPanelActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_up_by_keyboard:
+                intent = new Intent(this, BtnUpByKeyBoardActivity.class);
                 startActivity(intent);
                 break;
 
