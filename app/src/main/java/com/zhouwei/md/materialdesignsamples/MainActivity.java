@@ -8,6 +8,9 @@ import android.view.View;
 import com.zhouwei.md.materialdesignsamples.asmewill.BDTieBaActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.BoWenAnimationActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.BtnUpByKeyBoardActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.CollapsingBarLayoutFourActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.CollapsingBarLayoutThreeActivity;
+import com.zhouwei.md.materialdesignsamples.asmewill.CollapsingBarLayoutTwoActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.SlidingUpPanelActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjActivity;
 import com.zhouwei.md.materialdesignsamples.asmewill.WdzjBGARefreshActivity;
@@ -22,7 +25,7 @@ import com.zhouwei.md.materialdesignsamples.edit.TextInputSimpleActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.BottomNavigationActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity2;
-import com.zhouwei.md.materialdesignsamples.toolbar.AppbarLayoutActivity;
+import com.zhouwei.md.materialdesignsamples.toolbar.CollapsingBarLayoutOneActivity;
 import com.zhouwei.md.materialdesignsamples.toolbar.JanshuActivity;
 import com.zhouwei.md.materialdesignsamples.toolbar.ToolbarActivity;
 
@@ -35,7 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_bottom_sheet).setOnClickListener(this);
         findViewById(R.id.btn_toolbar).setOnClickListener(this);
-        findViewById(R.id.btn_appbar_layout).setOnClickListener(this);
+        findViewById(R.id.btn_collapsingbar1).setOnClickListener(this);
+        findViewById(R.id.btn_collapsingbar2).setOnClickListener(this);
+        findViewById(R.id.btn_collapsingbar3).setOnClickListener(this);
+        findViewById(R.id.btn_collapsingbar4).setOnClickListener(this);
         findViewById(R.id.btn_appbar_layout1).setOnClickListener(this);
         findViewById(R.id.btn_appbar_layout2).setOnClickListener(this);
         findViewById(R.id.swipe_btn).setOnClickListener(this);
@@ -67,8 +73,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, ToolbarActivity.class);
                 startActivity(intent);
                 break;
-            case  R.id.btn_appbar_layout:
-                intent = new Intent(this, AppbarLayoutActivity.class);
+            case  R.id.btn_collapsingbar1:
+                intent = new Intent(this, CollapsingBarLayoutOneActivity.class);
+                startActivity(intent);
+                break;
+            case  R.id.btn_collapsingbar2:
+                intent = new Intent(this, CollapsingBarLayoutTwoActivity.class);
+                startActivity(intent);
+                break;
+            case  R.id.btn_collapsingbar3:
+                intent = new Intent(this, CollapsingBarLayoutThreeActivity.class);
+                startActivity(intent);
+                break;
+            case  R.id.btn_collapsingbar4:
+                intent = new Intent(this, CollapsingBarLayoutFourActivity.class);
                 startActivity(intent);
                 break;
             case  R.id.btn_appbar_layout1:

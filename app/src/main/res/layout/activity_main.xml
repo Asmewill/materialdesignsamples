@@ -28,10 +28,31 @@
              android:gravity="center"
              />
          <TextView
-             android:id="@+id/btn_appbar_layout"
+             android:id="@+id/btn_collapsingbar1"
              android:layout_width="match_parent"
              android:layout_height="50dp"
-             android:text="CoordinatorLayout + AppbarLayout"
+             android:text="AppbarLayout+CollapsingToolbarLayout(一)"
+             android:gravity="center"
+             />
+         <TextView
+             android:id="@+id/btn_collapsingbar2"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="AppbarLayout+CollapsingToolbarLayout(二)"
+             android:gravity="center"
+             />
+         <TextView
+             android:id="@+id/btn_collapsingbar3"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="AppbarLayout+CollapsingToolbarLayout(三)"
+             android:gravity="center"
+             />
+         <TextView
+             android:id="@+id/btn_collapsingbar4"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="AppbarLayout+CollapsingToolbarLayout(四)"
              android:gravity="center"
              />
          <TextView

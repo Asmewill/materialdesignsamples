@@ -26,7 +26,7 @@
             android:name=".toolbar.ToolbarActivity"
             android:theme="@style/MDTheme" />
         <activity
-            android:name=".toolbar.AppbarLayoutActivity"
+            android:name=".toolbar.CollapsingBarLayoutOneActivity"
             android:theme="@style/MDTheme" />
         <activity
             android:name=".toolbar.JanshuActivity"
@@ -98,6 +98,21 @@
         </activity>
         <activity
             android:name=".asmewill.BtnUpByKeyBoardActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".asmewill.CollapsingBarLayoutTwoActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".asmewill.CollapsingBarLayoutThreeActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".asmewill.CollapsingBarLayoutFourActivity"
             android:theme="@style/MDTheme"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
