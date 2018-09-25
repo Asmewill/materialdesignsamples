@@ -45,8 +45,11 @@
 
 ##### 11 TextInputLayout + TextInputEditText 示例
 
-##### 12...
+##### 12 [Material Design 之 CollapsingToolbarLayout 使用](https://github.com/CTSN/TestCollapsingToolbarLayout)
 
+##### 13 [Material Design 之 BottomNavigation 使用一](https://github.com/Ashok-Varma/BottomNavigation)
+
+##### 14 [Material Design 之 BottomNavigation 使用二](https://github.com/aurelhubert/ahbottomnavigation)
 
 
 
