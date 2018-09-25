@@ -29,7 +29,7 @@
             android:name=".toolbar.CollapsingBarLayoutOneActivity"
             android:theme="@style/MDTheme" />
         <activity
-            android:name=".toolbar.JanshuActivity"
+            android:name=".toolbar.JianshuActivity"
             android:theme="@style/MDTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity

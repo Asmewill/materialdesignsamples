@@ -26,7 +26,7 @@ import com.zhouwei.md.materialdesignsamples.navigation.BottomNavigationActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity2;
 import com.zhouwei.md.materialdesignsamples.toolbar.CollapsingBarLayoutOneActivity;
-import com.zhouwei.md.materialdesignsamples.toolbar.JanshuActivity;
+import com.zhouwei.md.materialdesignsamples.toolbar.JianshuActivity;
 import com.zhouwei.md.materialdesignsamples.toolbar.ToolbarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case  R.id.btn_appbar_layout1:
-                intent = new Intent(this, JanshuActivity.class);
+                intent = new Intent(this, JianshuActivity.class);
                 startActivity(intent);
                 break;
             case  R.id.btn_appbar_layout2:

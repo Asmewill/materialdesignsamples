@@ -32,7 +32,7 @@ import java.util.List;
  * Created by zhouwei on 16/12/8.
  */
 
-public class JanshuActivity extends AppCompatActivity {
+public class JianshuActivity extends AppCompatActivity {
     private ConvenientBanner mConvenientBanner;
     private RecyclerView mRecyclerView;
     private AppBarLayout mAppBarLayout;
