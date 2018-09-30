@@ -18,6 +18,8 @@ import com.zhouwei.md.materialdesignsamples.toolbar.JsEntry;
 import java.util.ArrayList;
 import java.util.List;
 
+import george.curious.transsion.lib.bean.Student;
+
 /***
  * 仿百度贴吧详情状态栏
  */
@@ -45,6 +47,7 @@ public class BDTieBaActivity extends AppCompatActivity {
                 finish();
             }
         });
+        Student student=new Student("",0);
     }
 
     /**

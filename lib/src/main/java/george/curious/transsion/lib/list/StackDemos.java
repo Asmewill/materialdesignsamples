@@ -8,7 +8,7 @@ import java.util.Stack;
 /**
  * Created by jian.shui on 2018/9/27
  */
-public class StackDemo {
+public class StackDemos {
     public static void main(String[] args){
         testStack();
 
@@ -43,7 +43,7 @@ public class StackDemo {
         list.add("1");
         list.add("2");
         list.add("3");
-        System.out.println("list is empty:"+list.get(3));
+        System.out.println("list is empty:"+list.get(2));
         Iterator<String> iterator=list.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
