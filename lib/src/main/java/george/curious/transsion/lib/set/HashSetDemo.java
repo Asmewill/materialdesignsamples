@@ -1,5 +1,6 @@
 package george.curious.transsion.lib.set;
 
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -10,7 +11,12 @@ import java.util.Set;
 public class HashSetDemo {
 
     public static  void main(String[] args) {
-        testHashSet();
+       // testHashSet();
+        Calendar cal = Calendar.getInstance();
+        // get start of this week in milliseconds
+        cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek()+1);
+        System.out.println("time:"+ cal.getTime());
+
 
     }
 

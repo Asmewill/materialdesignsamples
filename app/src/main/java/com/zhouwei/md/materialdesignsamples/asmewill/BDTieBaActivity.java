@@ -1,10 +1,12 @@
 package com.zhouwei.md.materialdesignsamples.asmewill;
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,13 +14,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.zhouwei.md.materialdesignsamples.DataUtils;
 import com.zhouwei.md.materialdesignsamples.R;
+import com.zhouwei.md.materialdesignsamples.bean.Scheme;
+import com.zhouwei.md.materialdesignsamples.test.SchemeAdapter;
 import com.zhouwei.md.materialdesignsamples.toolbar.JsEntry;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import george.curious.transsion.lib.bean.Student;
 
 /***
  * 仿百度贴吧详情状态栏
@@ -33,21 +36,20 @@ public class BDTieBaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bdtie_ba);
         rl_title= (RelativeLayout) findViewById(R.id.rl_title);
         mRecyclerView= (RecyclerView) findViewById(R.id.vertical_recyclerView);
-        mRecyclerView = (RecyclerView) findViewById(R.id.vertical_recyclerView);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(manager);
-        MyAdapter myAdapter = new MyAdapter();
+        SchemeAdapter myAdapter = new SchemeAdapter();
         mRecyclerView.setAdapter(myAdapter);
-        myAdapter.setData(mockData());
-        myAdapter.notifyDataSetChanged();
         findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-        Student student=new Student("",0);
+        List<Scheme> list= DataUtils.getListScheme();
+        myAdapter.setNewData(list);
+        myAdapter.notifyDataSetChanged();
     }
 
     /**
@@ -133,5 +135,14 @@ public class BDTieBaActivity extends AppCompatActivity {
             name = (TextView) itemView.findViewById(R.id.author_name);
             cover = (ImageView) itemView.findViewById(R.id.cover);
         }
+    }
+
+     public void stopRecycleViewScroll(){
+        /**
+         * 强制停止RecyclerView的滑动
+         * @param mRecyclerView
+         */
+        mRecyclerView.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_CANCEL, 0, 0, 0));
+
     }
 }

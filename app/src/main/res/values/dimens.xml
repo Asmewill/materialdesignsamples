@@ -275,4 +275,738 @@
     <dimen name="item_decoration_title_start_margin">10dp</dimen>
     <dimen name="item_decoration_title_fontsize">13sp</dimen>
     <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="dim1">1dp</dimen>
+    <dimen name="dim1.5">1.5dp</dimen>
+    <dimen name="dim2">2dp</dimen>
+    <dimen name="dim3">3dp</dimen>
+    <dimen name="dim4">4dp</dimen>
+    <dimen name="dim5">5dp</dimen>
+    <dimen name="dim6">6dp</dimen>
+    <dimen name="dim7">7dp</dimen>
+    <dimen name="dim8">8dp</dimen>
+    <dimen name="dim9">9dp</dimen>
+    <dimen name="dim10">10dp</dimen>
+    <dimen name="dim11">11dp</dimen>
+    <dimen name="dim12">12dp</dimen>
+    <dimen name="dim14">14dp</dimen>
+    <dimen name="dim15">15dp</dimen>
+    <dimen name="dim16">16dp</dimen>
+    <dimen name="dim17">17dp</dimen>
+    <dimen name="dim18">18dp</dimen>
+    <dimen name="dim19">19dp</dimen>
+    <dimen name="dim20">20dp</dimen>
+    <dimen name="dim21">21dp</dimen>
+    <dimen name="dim22">22dp</dimen>
+    <dimen name="dim23">23dp</dimen>
+    <dimen name="dim24">24dp</dimen>
+    <dimen name="dim25">25dp</dimen>
+    <dimen name="dim26">26dp</dimen>
+    <dimen name="dim27">27dp</dimen>
+    <dimen name="dim28">28dp</dimen>
+    <dimen name="dim29">29dp</dimen>
+    <dimen name="dim30">30dp</dimen>
+    <dimen name="dim32">32dp</dimen>
+    <dimen name="dim33">33dp</dimen>
+    <dimen name="dim34">34dp</dimen>
+    <dimen name="dim35">35dp</dimen>
+    <dimen name="dim36">36dp</dimen>
+    <dimen name="dim37">37dp</dimen>
+    <dimen name="dim38">38dp</dimen>
+    <dimen name="dim40">40dp</dimen>
+    <dimen name="dim41">41dp</dimen>
+    <dimen name="dim44">44dp</dimen>
+    <dimen name="dim45">45dp</dimen>
+    <dimen name="dim46">46dp</dimen>
+    <dimen name="dim47">47dp</dimen>
+    <dimen name="dim48">48dp</dimen>
+    <dimen name="dim50">50dp</dimen>
+    <dimen name="dim52">52dp</dimen>
+    <dimen name="dim53">53dp</dimen>
+    <dimen name="dim55">55dp</dimen>
+    <dimen name="dim56">56dp</dimen>
+    <dimen name="dim58">58dp</dimen>
+    <dimen name="dim59">59dp</dimen>
+    <dimen name="dim60">60dp</dimen>
+    <dimen name="dim64">64dp</dimen>
+    <dimen name="dim66">66dp</dimen>
+    <dimen name="dim70">70dp</dimen>
+    <dimen name="dim72">72dp</dimen>
+    <dimen name="dim75">75dp</dimen>
+    <dimen name="dim76">76dp</dimen>
+    <dimen name="dim77">77dp</dimen>
+    <dimen name="dim78">78dp</dimen>
+    <dimen name="dim80">80dp</dimen>
+    <dimen name="dim86">86dp</dimen>
+    <dimen name="dim88">88dp</dimen>
+    <dimen name="dim90">90dp</dimen>
+    <dimen name="dim95">95dp</dimen>
+    <dimen name="dim96">96dp</dimen>
+    <dimen name="dim98">98dp</dimen>
+    <dimen name="dim99">99dp</dimen>
+    <dimen name="dim100">100dp</dimen>
+    <dimen name="dim105">105dp</dimen>
+    <dimen name="dim107">107dp</dimen>
+    <dimen name="dim108">108dp</dimen>
+    <dimen name="dim110">110dp</dimen>
+    <dimen name="dim116">116dp</dimen>
+    <dimen name="dim118">118dp</dimen>
+    <dimen name="dim120">120dp</dimen>
+    <dimen name="dim123">123dp</dimen>
+    <dimen name="dim125">125dp</dimen>
+    <dimen name="dim128">128dp</dimen>
+    <dimen name="dim130">130dp</dimen>
+    <dimen name="dim132">132dp</dimen>
+    <dimen name="dim139">139dp</dimen>
+    <dimen name="dim140">140dp</dimen>
+    <dimen name="dim144">144dp</dimen>
+    <dimen name="dim146">146dp</dimen>
+    <dimen name="dim150">150dp</dimen>
+    <dimen name="dim154">154dp</dimen>
+    <dimen name="dim155">155dp</dimen>
+    <dimen name="dim160">160dp</dimen>
+    <dimen name="dim164">164dp</dimen>
+    <dimen name="dim165">165dp</dimen>
+    <dimen name="dim170">170dp</dimen>
+    <dimen name="dim173">173dp</dimen>
+    <dimen name="dim180">180dp</dimen>
+    <dimen name="dim200">200dp</dimen>
+    <dimen name="dim210">210dp</dimen>
+    <dimen name="dim212">212dp</dimen>
+    <dimen name="dim218">218dp</dimen>
+    <dimen name="dim230">230dp</dimen>
+    <dimen name="dim250">250dp</dimen>
+    <dimen name="dim280">280dp</dimen>
+    <dimen name="dim290">290dp</dimen>
+    <dimen name="dim300">300dp</dimen>
+    <dimen name="dim320">320dp</dimen>
+    <dimen name="dim323">323dp</dimen>
+    <dimen name="dim329">329dp</dimen>
+    <dimen name="dim325">325dp</dimen>
+    <dimen name="dim330">330dp</dimen>
+    <dimen name="dim333">333dp</dimen>
+    <dimen name="dim335">335dp</dimen>
+    <dimen name="dim340">340dp</dimen>
+    <dimen name="dim356">356dp</dimen>
+    <dimen name="dim370">370dp</dimen>
+    <dimen name="dim400">400dp</dimen>
+
+
+
+
+
+
+    <!-- 常规文字大小定义-->
+    <dimen name="text_20px">10sp</dimen>
+    <dimen name="text_22px">11sp</dimen>
+    <dimen name="text_24px">12sp</dimen>
+    <dimen name="text_28px">14sp</dimen>
+    <dimen name="text_30px">15sp</dimen>
+    <dimen name="text_32px">16sp</dimen>
+    <dimen name="text_34px">17sp</dimen>
+    <dimen name="text_36px">18sp</dimen>
+    <dimen name="text_40px">20sp</dimen>
+    <dimen name="text_60px">30sp</dimen>
+
+
+
+    <!--userCenter-->
+    <dimen name="percent80_screen_width">288dp</dimen>
+    <dimen name="head_icon_frame_size">120dp</dimen>
+    <dimen name="head_icon_size">112dp</dimen>
+    <dimen name="head_icon_size_half">56dp</dimen>
+    <dimen name="head_icon_stroke">4dp</dimen>
+    <dimen name="head_icon_top_margin">30dp</dimen>
+    <dimen name="name_top_margin">20dp</dimen>
+    <dimen name="info_height">20dp</dimen>
+    <dimen name="info_top_margin">45dp</dimen>
+    <dimen name="info_title_width">105dp</dimen>
+    <dimen name="info_left_margin">15dp</dimen>
+    <dimen name="info_no_icon_left_margin">30dp</dimen>
+    <dimen name="info_icon_key_margin">10dp</dimen>
+
+    <dimen name="info_line_space">20dp</dimen>
+    <dimen name="info_text_line_space">11dp</dimen>
+    <dimen name="info_text_margin_bottom">9dp</dimen>
+    <dimen name="arrow_down_margin_top">15dp</dimen>
+    <dimen name="logout_button_height">45dp</dimen>
+    <dimen name="logout_button_radius">22.5dp</dimen>
+
+    <dimen name="version_margin_top">15dp</dimen>
+    <dimen name="version_margin_bottom">15dp</dimen>
+    <dimen name="new_margin_top">15dp</dimen>
+
+
+    <dimen name="username_margintop">80dp</dimen>
+    <dimen name="username_textsize">18sp</dimen>
+    <dimen name="password_margin">30dp</dimen>
+    <dimen name="password_margintop">5dp</dimen>
+    <dimen name="password_marginleft">30dp</dimen>
+    <dimen name="password_marginright">30dp</dimen>
+    <dimen name="password_marginbottom">10dp</dimen>
+    <dimen name="login_textsieze">18sp</dimen>
+    <dimen name="flash_width">60dp</dimen>
+    <dimen name="flash_height">60dp</dimen>
+
+    <dimen name="newshop_notes_height">115dp</dimen>
+    <dimen name="new_shop_text_width">140dp</dimen>
+    <dimen name="new_shop_text_marginleft">15dp</dimen>
+    <dimen name="new_shop_shopname_size2">16sp</dimen>
+    <dimen name="view">1dp</dimen>
+    <dimen name="view_2">10dp</dimen>
+    <dimen name="view_3">5dp</dimen>
+    <dimen name="view_5">3dp</dimen>
+    <dimen name="view_4">70dp</dimen>
+    <dimen name="newshop_px336">168dp</dimen>
+    <dimen name="newshop_px136">136dp</dimen>
+    <dimen name="shopname_top">10dp</dimen>
+    <dimen name="edit_marginLeft">10dp</dimen>
+    <dimen name="posm_top">10dp</dimen>
+    <dimen name="posm_bottom">10dp</dimen>
+    <dimen name="grade_top">3dp</dimen>
+    <dimen name="grade_bottom">3dp</dimen>
+    <dimen name="details_grade_top">3dp</dimen>
+    <dimen name="details_grade_bottom">3dp</dimen>
+    <dimen name="posm_left">15dp</dimen>
+    <dimen name="grade_height">60dp</dimen>
+    <dimen name="grade_marginright">100dp</dimen>
+    <dimen name="note_margintop">10dp</dimen>
+    <dimen name="name_pass_marginleft">10dp</dimen>
+    <dimen name="name_pass_marginbottom">5dp</dimen>
+    <dimen name="toolbar_margin">40dp</dimen>
+
+
+    <!--region_divider-->
+    <dimen name="region_item_height">45dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_stroke">0.5dp</dimen>
+
+
+    <!--region_search_bar-->
+    <dimen name="region_search_bar_height">35dp</dimen>
+    <dimen name="region_search_bar_width">330dp</dimen>
+    <dimen name="region_search_bar_corner">17.5dp</dimen>
+    <dimen name="region_search_bar_small_padding">10dp</dimen>
+    <dimen name="region_search_bar_large_padding">15dp</dimen>
+    <dimen name="region_search_bar_stroke">0.5dp</dimen>
+
+    <!--custom_grade-->
+    <dimen name="custom_grade_min_width">60dp</dimen>
+    <dimen name="custom_grade_max_width">63dp</dimen>
+    <dimen name="custom_grade_padding">10dp</dimen>
+    <dimen name="custom_grade_margin">5dp</dimen>
+    <dimen name="custom_grade_min_height">39.5dp</dimen>
+    <dimen name="custom_margin_grade">5dp</dimen>
+    <dimen name="custom_around">3dp</dimen>
+
+    <!--custom_category-->
+    <dimen name="custom_category_min_width">60dp</dimen>
+    <dimen name="custom_category_max_width">135.5dp</dimen>
+    <dimen name="custom_category_padding">5dp</dimen>
+    <dimen name="custom_category_margin">5dp</dimen>
+    <dimen name="custom_category_min_height">39.5dp</dimen>
+    <dimen name="custom_margin_category">5dp</dimen>
+
+    <!--custom_posm-->
+    <dimen name="custom_posm_min_width">78dp</dimen>
+    <dimen name="custom_posm_max_width">88dp</dimen>
+    <dimen name="custom_posm_padding">6dp</dimen>
+    <dimen name="custom_posm_margin">5dp</dimen>
+    <dimen name="custom_posm_min_height">30dp</dimen>
+
+
+    <!--posm_margin-->
+    <dimen name="margin_top">4dp</dimen>
+    <dimen name="margin_bottom">4dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">5dp</dimen>
+
+    <!--usrname_password_margin-->
+    <dimen name="username_size">20sp</dimen>
+
+
+
+    <!--logoutDialog-->
+    <dimen name="dialog_width">262dp</dimen>
+    <dimen name="dialog_marginBottom">50dp</dimen>
+    <dimen name="dialog_messageHeight">105dp</dimen>
+    <dimen name="dialog_margin">1dp</dimen>
+    <dimen name="dialog_message_minHeight">95.0dip</dimen>
+    <dimen name="dialog_message_paddingBottom">15.0dip</dimen>
+    <dimen name="dialog_message_paddingLeft">15.0dip</dimen>
+    <dimen name="dialog_message_paddingRight">15.0dip</dimen>
+    <dimen name="dialog_message_paddingTop">30.0dip</dimen>
+    <dimen name="dialog_buttonHeight">40dp</dimen>
+    <dimen name="positiveButton">129.5dp</dimen>
+
+
+    <dimen name="version_new_rect_height">15dp</dimen>
+    <dimen name="version_new_rect_radius">7.5dp</dimen>
+    <dimen name="version_new_rect_margin_top">15dp</dimen>
+    <dimen name="version_new_margin_bottom">18dp</dimen>
+
+    //zxm
+    <dimen name="per_mt_16px">8dp</dimen>
+    <dimen name="per_mb_40px">20dp</dimen>
+
+
+
+
+    <!--upload_sale-->
+    <dimen name="toolbar_back">10dp</dimen>
+    <dimen name="toolbar_height_blue">45dp</dimen>
+    <dimen name="toolbar_text_margin">40dp</dimen>
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="toolbar_edit">12dp</dimen>
+    <dimen name="cardview_margin_top">10dp</dimen>
+    <dimen name="cardview_margin_left">10dp</dimen>
+    <dimen name="cardview_margin_right">10dp</dimen>
+    <dimen name="cardview_margin_bottom">1dp</dimen>
+    <dimen name="cardview_cardCornerRadius">5dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="sale_date_size">16sp</dimen>
+    <dimen name="sale_date_margin_left">15dp</dimen>
+    <dimen name="sale_date_margin_top">10dp</dimen>
+    <dimen name="sale_date_margin_bottom">10dp</dimen>
+    <dimen name="upload_image_margin_right">8dp</dimen>
+    <dimen name="upload_height">35dp</dimen>
+    <dimen name="sales_upload_date_item_margin_top">20dp</dimen>
+    <dimen name="sales_upload_item_height">49dp</dimen>
+    <dimen name="sales_upload_item_count_width">90dp</dimen>
+    <dimen name="sales_upload_item_model_width">99dp</dimen>
+    <dimen name="sales_upload_recycler_padding">10dp</dimen>
+    <dimen name="sales_upload_iv_upload_margin_right">15dp</dimen>
+    <dimen name="sales_upload_checkbox_margin_item">9dp</dimen>
+
+    <!--list_model-->
+    <dimen name="model_margin_top">10dp</dimen>
+    <dimen name="model_margin_left">15dp</dimen>
+    <dimen name="model_margin_bottom">10dp</dimen>
+    <dimen name="model_margin_right">15dp</dimen>
+    <dimen name="model_text_size">16sp</dimen>
+    <dimen name="address_text_size">14sp</dimen>
+    <dimen name="address_margin_bottom">11dp</dimen>
+    <dimen name="time_margin_top">14dp</dimen>
+    <dimen name="time_margin_right">15dp</dimen>
+    <dimen name="time_text_size">14sp</dimen>
+    <dimen name="upload_fail_left">50dp</dimen>
+    <dimen name="upload_fail_bottom">5dp</dimen>
+    <dimen name="price_margin_right">5dp</dimen>
+    <dimen name="view_margin_right">15dp</dimen>
+
+    <!--upload_sale_bottom_button-->
+    <dimen name="frame_height">54dp</dimen>
+    <dimen name="button_margin_top">7dp</dimen>
+    <dimen name="button_margin_bottom">7dp</dimen>
+    <dimen name="button_margin_left">20dp</dimen>
+    <dimen name="button_margin_right">10dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="button_zxing_padding_left">40dp</dimen>
+    <dimen name="button_zxing_padding_right">30dp</dimen>
+
+    <!--popup_window_date_selector-->
+    <dimen name="pop_title_height">45dp</dimen>
+    <dimen name="pop_cancel_margin_left">15dp</dimen>
+    <dimen name="pop_date_size">16sp</dimen>
+    <dimen name="pop_date_margin_left">178dp</dimen>
+    <dimen name="wheelview_height">135dp</dimen>
+
+    <!--popup_model_selector-->
+    <dimen name="pop_margin">10dp</dimen>
+    <dimen name="pop_height">220dp</dimen>
+    <dimen name="pop_model_text_size">14sp</dimen>
+    <dimen name="pop_text_padding_top">6dp</dimen>
+    <dimen name="pop_text_padding_bottom">6dp</dimen>
+    <dimen name="pop_text_padding_right">20dp</dimen>
+    <dimen name="pop_text_padding_left">20dp</dimen>
+    <dimen name="scroll_margin_bottom">15dp</dimen>
+
+    <!--performance wheelview date-->
+    <dimen name="performance_date_iv_margin_top">17dp</dimen>
+    <dimen name="performance_date_iv_padding">7.5dp</dimen>
+    <dimen name="wheelview_text_margin">1.5dp</dimen>
+    <dimen name="performance_wheelview_pading">18dp</dimen>
+    <dimen name="performance_wheelview_alpha_pading">36dp</dimen>
+    <dimen name="performance_wheelview_margin_top">4.5dp</dimen>
+    <dimen name="performance_wheelview_margin_bottom">18dp</dimen>
+    <dimen name="checkinventory_wheelview_margin_top">20dp</dimen>
+    <dimen name="checkinventory_wheelview_margin_bottom">20dp</dimen>
+
+
+    <!--uploadInventory drawerLayout-->
+    <dimen name="drawer_height">400dp</dimen>
+    <dimen name="drawer_title">35dp</dimen>
+    <dimen name="drawer_title_size">16sp</dimen>
+    <dimen name="drawer_title_margin_left">15dp</dimen>
+    <dimen name="drawer_qty">35dp</dimen>
+    <dimen name="drawer_view">15dp</dimen>
+    <dimen name="drawer_add_margin_left">15dp</dimen>
+    <dimen name="drawer_num">14sp</dimen>
+    <dimen name="drawer_num_margin_right">15dp</dimen>
+    <dimen name="drawer_num_margin_bottom">2dp</dimen>
+    <dimen name="drawer_button_height">95dp</dimen>
+    <dimen name="drawer_button_margin">20dp</dimen>
+    <dimen name="drawer_button_height_a">40dp</dimen>
+    <dimen name="drawer_imageview_margin_top">415dp</dimen>
+    <dimen name="drawer_imageview_margin_right">15dp</dimen>
+    <dimen name="drawer_qty_unclick">45dp</dimen>
+
+
+    <!--date_select_text_size-->
+    <dimen name="current_item_text_size">7.5sp</dimen>
+    <dimen name="normal_item_text_size">6sp</dimen>
+    <dimen name="item_height">45dp</dimen>
+
+    <dimen name="current_item_text_size1">8sp</dimen>
+    <dimen name="normal_item_text_size1">7sp</dimen>
+
+
+    <!--add_model_-->
+    <dimen name="qty_width">120dp</dimen>
+    <dimen name="qty_margin_top">16dp</dimen>
+
+
+    <!--version-->
+    <dimen name="version_margin_top1">480dp</dimen>
+
+    <!--edit_num-->
+    <dimen name="edit_margin_left">2dp</dimen>
+    <dimen name="edit_margin_right">2dp</dimen>
+
+    <!--add_sales-->
+    <dimen name="activity_title_size">20sp</dimen>
+    <dimen name="add_sales_shop_name">68dp</dimen>
+    <dimen name="myshop_img_margin_top">16dp</dimen>
+    <dimen name="myshop_img_margin_left">15dp</dimen>
+    <dimen name="myshop_text_margin_top">13dp</dimen>
+    <dimen name="myshop_text_margin_bottom">15dp</dimen>
+    <dimen name="myshop_text_size">16sp</dimen>
+    <dimen name="view_interval">0.5dp</dimen>
+    <dimen name="linearlayout_num">49.5dp</dimen>
+    <dimen name="myshop_sum_margin_bottom">10dp</dimen>
+    <dimen name="myshop_sum_margin_right">15dp</dimen>
+    <dimen name="myshop_date_view">50dp</dimen>
+    <dimen name="date_select_margin_left">5dp</dimen>
+    <dimen name="date_select_img_margin_left">5dp</dimen>
+    <dimen name="button_add_another_padding_left">20dp</dimen>
+    <dimen name="button_add_another_width">159dp</dimen>
+    <dimen name="button_add_another_height">35dp</dimen>
+    <dimen name="button_add_another_margin_top">10dp</dimen>
+
+    <!--recyclerview_delete-->
+    <dimen name="delete_item_height">94dp</dimen>
+    <dimen name="recycler_delete_width">74dp</dimen>
+    <dimen name="recycler_imei_code_height">46.5dp</dimen>
+    <dimen name="view_delete">1dp</dimen>
+    <dimen name="view_delete_margin">15dp</dimen>
+    <dimen name="imei_code_margin_left">15dp</dimen>
+    <dimen name="imei_code_margin_right">17.5dp</dimen>
+    <dimen name="edittext_enter_code_width">191.5dp</dimen>
+    <dimen name="view_vertival_height">26.5dp</dimen>
+    <dimen name="view_vertival_margin_left">5.5dp</dimen>
+    <dimen name="title_width">67.5dp</dimen>
+    <dimen name="tv_delete_width">61dp</dimen>
+    <dimen name="tv_delete_height">18.5dp</dimen>
+    <dimen name="divider_recycler_item">10dp</dimen>
+
+    //zxm
+    <dimen name="cardview_margin_top_faild">20dp</dimen>
+    <dimen name="upload_height_faild">49dp</dimen>
+    <dimen name="shopname_mar_right">27dp</dimen>
+    <dimen name="checkinventory_wheelview_margin_top_1.2">16.5dp</dimen>
+    <dimen name="checkinventory_wheelview_margin_bottom_1.2">16.5dp</dimen>
+
+    <dimen name="qty_pad_right">59.5dp</dimen>
+    <dimen name="myshop_icon">19dp</dimen>
+    <dimen name="select_shop_item_mar_ringht">32dp</dimen>
+    <dimen name="detail_heigh">49dp</dimen>
+    <dimen name="preformance_current_sales_length">83dp</dimen>
+    <dimen name="preformance_sales_target_length">78dp</dimen>
+    <dimen name="preformance_tablayout_Indicatior_height">3dp</dimen>
+
+
+    <dimen name="preformance_tablayout_height">48dp</dimen>
+
+    <dimen name="tab_length">7.5dp</dimen>
+    <dimen name="preformance_viewpager_list_marginleft">190dp</dimen>
+
+    <dimen name="padding_right">16.5dp</dimen>
+
+    //cjw inventory_rectclerview
+    <dimen name="inventory_delete_width">78dp</dimen>
+    <dimen name="ic_back_zone">120dp</dimen>
+
+
+    //cjw new shop
+    <dimen name="new_shop_maintitle_marginleft">15dp</dimen>
+    <dimen name="new_shop_maintitle_width">140dp</dimen>
+    <dimen name="new_shop_maintitle_height">46.5dp</dimen>
+    <dimen name="new_shop_maintitle_size">14sp</dimen>
+    <dimen name="new_shop_edit_size">14sp</dimen>
+    <dimen name="view_address">10dp</dimen>
+    <dimen name="view_newshop">0.5dp</dimen>
+    <dimen name="btnnext_size">17sp</dimen>
+
+
+    //cjw other information
+    <dimen name="business_height">107dp</dimen>
+    <dimen name="business_width">150dp</dimen>
+    <dimen name="business_margin_left">15dp</dimen>
+    <dimen name="qty_of_staff_height">40dp</dimen>
+    <dimen name="qty_of_staff_margin_top">15dp</dimen>
+    <dimen name="qty_of_staff_margin_bottom">9dp</dimen>
+    <dimen name="business_size">14sp</dimen>
+    <dimen name="staff_width">170dp</dimen>
+    <dimen name="ralationship_marginleft">15dp</dimen>
+    <dimen name="relation_height">100dp</dimen>
+    <dimen name="relationship_margintop">4dp</dimen>
+    <dimen name="relationship_marginbottom">4dp</dimen>
+    <dimen name="relationship_marginleft">10dp</dimen>
+    <dimen name="relationship_marginright">5dp</dimen>
+    <dimen name="edit_stock_height">46dp</dimen>
+    <dimen name="edit_stock_margin_left">15dp</dimen>
+    <dimen name="edit_stock_margin_top">16dp</dimen>
+    <dimen name="edit_stock_margin_bottom">16dp</dimen>
+    <dimen name="edit_stock_margin_right">85dp</dimen>
+    <dimen name="tv_qty_size">11sp</dimen>
+    <dimen name="tv_qty_margin_top">15dp</dimen>
+    <dimen name="tv_qty_margin_bottom">16dp</dimen>
+    <dimen name="tv_qty_margin_right">15dp</dimen>
+    <dimen name="remark_height">150dp</dimen>
+    <dimen name="remark_qty_marginright">12dp</dimen>
+    <dimen name="remark_qty_marginbottom">8dp</dimen>
+    <dimen name="other_brand_qty_height">46dp</dimen>
+    <dimen name="et_brand_width">70dp</dimen>
+    <dimen name="materials_counting_name">200dp</dimen>
+
+    //cjw building new shop
+    <dimen name="recycler_min_height">69.5dp</dimen>
+    <dimen name="build_delete_height">69.5dp</dimen>
+    <dimen name="build_delete_width">74dp</dimen>
+    <dimen name="message_width">286.5dp</dimen>
+    <dimen name="image_width">73.5dp</dimen>
+    <dimen name="view_margin_left">10dp</dimen>
+    <dimen name="view_margin_top">15dp</dimen>
+    <dimen name="address_marintop">5.5dp</dimen>
+    <dimen name="address_marinbottom">15dp</dimen>
+    <dimen name="address_marinleft">15dp</dimen>
+    <dimen name="address_size">14sp</dimen>
+    <dimen name="padding_left_right">15dp</dimen>
+    <dimen name="shop_information_left_style">110dp</dimen>
+    <dimen name="padding_top_boom_px32">13.5dp</dimen>
+    <dimen name="view_height_other_information">10dp</dimen>
+
+    <!--edit_shop-->
+    <dimen name="country_title">34dp</dimen>
+    <dimen name="country_title_margin_left">10dp</dimen>
+    <dimen name="bottom_height">82.5dp</dimen>
+
+    <!--today_plan-->
+    <dimen name="today_plan_height">10dp</dimen>
+    <dimen name="today_plan_qty_margin_left">10dp</dimen>
+    <dimen name="plan_item_height">93dp</dimen>
+    <dimen name="plan_item_margin_left">10dp</dimen>
+    <dimen name="plan_item_width">255dp</dimen>
+    <dimen name="shop_name_size">14sp</dimen>
+    <dimen name="plan_shop_name_size">16sp</dimen>
+    <dimen name="address_image_margin_top">10dp</dimen>
+    <dimen name="address_margin_left">6dp</dimen>
+    <dimen name="address_margin_left_extra">8dp</dimen>
+    <dimen name="address_margin_top">7dp</dimen>
+    <dimen name="address_margin_top_extra">8dp</dimen>
+    <dimen name="view_marginleft">10dp</dimen>
+    <dimen name="view_margintop">12dp</dimen>
+    <dimen name="visit_image_margin_top">23dp</dimen>
+    <dimen name="week_margin_top">3dp</dimen>
+    <dimen name="week_margin_top_extra">6dp</dimen>
+    <dimen name="grade_width">28dp</dimen>
+    <dimen name="grade_height_plan">16dp</dimen>
+
+    <dimen name="history_title_height">42dp</dimen>
+
+    //cjw
+    <dimen name="plan_title_summary_height">50dp</dimen>
+    <dimen name="plan_week_width">40dp</dimen>
+    <dimen name="plan_week_height">20dp</dimen>
+
+    <!--common-->
+    <dimen name="common_tiny_margin">10dp</dimen>
+    <dimen name="common_small_margin">15dp</dimen>
+    <dimen name="common_mid_margin">20dp</dimen>
+
+    <!--today_visiting-->
+    <dimen name="today_summary_height">74dp</dimen>
+    <dimen name="today_summary_part_left_width">289dp</dimen>
+    <dimen name="view_summary_height">1dp</dimen>
+    <dimen name="view_summary_margin_top">10dp</dimen>
+    <dimen name="image_margin_top">18.5dp</dimen>
+    <dimen name="history_margin_top">5.5dp</dimen>
+    <dimen name="total_planned_margin_left">32dp</dimen>
+    <dimen name="total_planned_qty_margin_left">6dp</dimen>
+
+    <!--visiting_details-->
+    <dimen name="visiting_details_margin">10dp</dimen>
+    <dimen name="target_sales_marget_left">7dp</dimen>
+    <dimen name="key_model_height">46dp</dimen>
+    <dimen name="tv_edit_margin_right">6.5dp</dimen>
+    <dimen name="key_no_item_height">59dp</dimen>
+    <dimen name="feed_back_height">75.5dp</dimen>
+    <dimen name="empty_view_height">58dp</dimen>
+    <dimen name="key_model_item_height">84dp</dimen>
+    <dimen name="model_width">72dp</dimen>
+    <dimen name="view_vertical_height">90dp</dimen>
+    <dimen name="wos_qty_margin_top">30dp</dimen>
+    <dimen name="wos_size">11sp</dimen>
+    <dimen name="check_item_height">44dp</dimen>
+    <dimen name="qty_margin_right">27.5dp</dimen>
+
+
+    <dimen name="bt_marBot_20">10dp</dimen>
+    <dimen name="bt_width_160">80dp</dimen>
+    <dimen name="bt_height_60">30dp</dimen>
+    <dimen name="mar_6">3dp</dimen>
+    <dimen name="mar_24">12dp</dimen>
+    <dimen name="height_ll_132">66dp</dimen>
+    <dimen name="mar_36">18dp</dimen>
+
+    //cjw
+    <dimen name="add_other_shop_width">176.5dp</dimen>
+    <dimen name="add_other_shop_height">35dp</dimen>
+    <dimen name="add_other_shop_margin_bottom">16.5dp</dimen>
+    <dimen name="width_130">65dp</dimen>
+    <dimen name="martop_px26">13dp</dimen>
+    <dimen name="height_px206">103dp</dimen>
+    <dimen name="height_px300">150dp</dimen>
+
+
+    <!--sample-->
+    <dimen name="icon_phone_margin_left">17.5dp</dimen>
+    <dimen name="icon_phone_margin_right">6.5dp</dimen>
+    <dimen name="imei_code_width">78.5dp</dimen>
+    <dimen name="et_imei_width">156dp</dimen>
+    <dimen name="view_scan_margin_right">14dp</dimen>
+    <dimen name="tv_scan_margin_left">6dp</dimen>
+    <dimen name="add_pictures_height">409dp</dimen>
+    <dimen name="add_pictures_title_height">46dp</dimen>
+    <dimen name="picture_item_height">120dp</dimen>
+    <dimen name="view_empty">54dp</dimen>
+    <dimen name="mattop_px7">3.5dp</dimen>
+    <dimen name="image_height">90dp</dimen>
+    <dimen name="image_view_width">300dp</dimen>
+    <dimen name="image_view_height">420dp</dimen>
+    <dimen name="image_view_margin_top">76.5dp</dimen>
+    <dimen name="text_size_px22">11sp</dimen>
+
+    <!--damage-->
+    <dimen name="text_damage_list">41dp</dimen>
+    <dimen name="damage_item_height">105dp</dimen>
+    <dimen name="image_item_width">100dp</dimen>
+    <dimen name="context_item_width">180dp</dimen>
+    <dimen name="upload_margin">23dp</dimen>
+    <dimen name="edit_width">70dp</dimen>
+    <dimen name="edit_height">30dp</dimen>
+    <dimen name="height_px210">105dp</dimen>
+    <dimen name="height_px256">128dp</dimen>
+    <dimen name="pad_px18">9dp</dimen>
+
+    <!--other_change-->
+    <dimen name="add_img_with">21dp</dimen>
+    <dimen name="add_img_margin_top">12.5dp</dimen>
+    <dimen name="edit_brand_with">88.5dp</dimen>
+    <dimen name="edit_view_height">26.5dp</dimen>
+    <dimen name="country_city_margin_left">20dp</dimen>
+
+
+    <!--take_photo_dialog-->
+    <dimen name="dialog_height">101dp</dimen>
+    <dimen name="take_height">50dp</dimen>
+    <dimen name="view_progress_width">270dp</dimen>
+    <dimen name="view_progress_height">4dp</dimen>
+
+
+    <!--material_new-->
+    <dimen name="item_height_new">80dp</dimen>
+    <dimen name="image_width_height">60dp</dimen>
+    <dimen name="content_height">60.5dp</dimen>
+    <dimen name="content_width">185dp</dimen>
+    <dimen name="content_margin_top">11dp</dimen>
+    <dimen name="view_margin_start">27dp</dimen>
+    <dimen name="dialog_edit_width">270dp</dimen>
+    <dimen name="dialog_edit_height">159dp</dimen>
+    <dimen name="content_edit_height">70dp</dimen>
+    <dimen name="button_height">55dp</dimen>
+
+    <dimen name="title_height">29.5dp</dimen>
+
+    <dimen name="edit_qty_width">45dp</dimen>
+    <dimen name="edit_qty_height">30dp</dimen>
+    <dimen name="title_height_">33dp</dimen>
+    <dimen name="dialog_margin_top">125dp</dimen>
+    <dimen name="image_min_width">40dp</dimen>
+    <dimen name="image_big_width">240dp</dimen>
+    <dimen name="image_big_ur">240dp</dimen>
+
+
+
+    <!--visiting_details_new-->
+    <dimen name="pictures_height">70dp</dimen>
+    <dimen name="pictures_height_content">105dp</dimen>
+    <dimen name="image_height_visiting">75dp</dimen>
+
+    <!--supervisor_performance-->
+    <dimen name="toolbar_title_height">56dp</dimen>
+    <dimen name="performance_date_height">356.5dp</dimen>
+    <dimen name="shop_performance_height">228dp</dimen>
+    <dimen name="date_selector_height">84dp</dimen>
+    <dimen name="date_height">22.5dp</dimen>
+    <dimen name="list_date_height">84dp</dimen>
+    <dimen name="list_model_width">78.5dp</dimen>
+    <dimen name="list_content_height">180.5dp</dimen>
+
+    <!--shop_sales_-->
+    <dimen name="list_item_height">68.5dp</dimen>
+    <dimen name="list_sales_width">65.5dp</dimen>
+    <dimen name="list_content_width">225dp</dimen>
+    <dimen name="list_content_margin_left">4.5dp</dimen>
+
+    <!--attendance-->
+    <dimen name="punch_time_height">150dp</dimen>
+    <dimen name="view_width">200dp</dimen>
+    <dimen name="punch_margin_top">46.5dp</dimen>
+    <dimen name="records_button_width">200dp</dimen>
+    <dimen name="records_button_height">36.5dp</dimen>
+    <dimen name="work_height">44dp</dimen>
+    <dimen name="dialog_attendance_width">334.5dp</dimen>
+    <dimen name="dialog_attendance_height">179dp</dimen>
+
+
+    <!--shop_visit_new-->
+    <dimen name="clear_width">88.5dp</dimen>
+    <dimen name="date_select_zone_height">181dp</dimen>
+    <dimen name="from_margin_top">57.5dp</dimen>
+    <dimen name="from_margin_left">26dp</dimen>
+    <dimen name="from_margin_bottom">12dp</dimen>
+    <dimen name="from_margin_right">90.05dp</dimen>
+    <dimen name="from_width">164.05dp</dimen>
+    <dimen name="to_width">164.05dp</dimen>
+    <dimen name="line_with">31.85dp</dimen>
+    <dimen name="line_height">54.2dp</dimen>
+    <dimen name="line_top">62.4dp</dimen>
+    <dimen name="line_bottom">66.4dp</dimen>
+    <dimen name="to_margin_left">47.6dp</dimen>
+    <dimen name="dim68">68dp</dimen>
+
+    <dimen name="dim121">121.5dp</dimen>
+    <dimen name="dim198">198dp</dimen>
+    <dimen name="dim109">109dp</dimen>
+    <dimen name="dim264">264dp</dimen>
+    <dimen name="dim93">93dp</dimen>
+    <dimen name="dim360">360dp</dimen>
+    <dimen name="dim81">81dp</dimen>
+    <dimen name="dim27.5">27.5dp</dimen>
+    <dimen name="dim13">13dp</dimen>
+    <dimen name="dim42">42dp</dimen>
+    <dimen name="dim177">177dp</dimen>
+    <dimen name="dim129">129dp</dimen>
+
+    <dimen name="dim244">244dp</dimen>
 </resources>

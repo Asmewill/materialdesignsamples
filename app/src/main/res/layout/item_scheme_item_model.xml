@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/dim3"
+    android:paddingBottom="@dimen/dim3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvModel"
+            android:gravity="left|center_vertical"
+            tools:text="K7 18+4"
+            android:textSize="14sp"
+            android:textColor="#FF4F4F6F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvIMEI"
+            android:gravity="left|center_vertical"
+            android:text="355346899336973"
+            android:textColor="#FF88889C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:gravity="left|center_vertical"
+            android:text="14 May 2018 "
+            android:textColor="#FF88889C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:gravity="right|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvPrice"
+            tools:text="18 Rs"
+            android:drawableLeft="@mipmap/ic32_plus"
+            android:drawablePadding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
