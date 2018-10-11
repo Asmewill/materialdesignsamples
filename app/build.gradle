@@ -39,16 +39,19 @@ dependencies {
     compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
     compile 'com.sothree.slidinguppanel:library:3.3.1'
     //工具类
-    compile 'com.blankj:utilcode:1.9.10'
+    implementation 'com.blankj:utilcode:1.20.4'
     //expandable-layout
     compile 'com.github.aakira:expandable-layout:1.6.0@aar'
     //keyboardvisibilityevent
     compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
-    compile 'com.jakewharton:butterknife:8.7.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
     compile project(path: ':lib')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'
+
 }
 
 
