@@ -178,6 +178,13 @@
              android:text="底部按钮根据键盘的状态弹起"
              android:gravity="center"
              />
+         <TextView
+             android:id="@+id/btn_test_kotlin"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="kotlin测试"
+             android:gravity="center"
+             />
      </LinearLayout>
 
 </ScrollView>

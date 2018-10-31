@@ -22,6 +22,7 @@ import com.zhouwei.md.materialdesignsamples.behavoir.SwipeDismissBehaviorActivit
 import com.zhouwei.md.materialdesignsamples.bottomsheetdialog.BottomSheetDialogActivity;
 import com.zhouwei.md.materialdesignsamples.cardview.CardViewSimpleActivity;
 import com.zhouwei.md.materialdesignsamples.edit.TextInputSimpleActivity;
+import com.zhouwei.md.materialdesignsamples.kotlin.TestKotlinActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.BottomNavigationActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity2;
@@ -59,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_ani).setOnClickListener(this);
         findViewById(R.id.tv_sliing_up_panel).setOnClickListener(this);
         findViewById(R.id.btn_up_by_keyboard).setOnClickListener(this);
+        findViewById(R.id.btn_test_kotlin).setOnClickListener(this);
+
     }
 
     @Override
@@ -137,13 +140,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, BottomSheetBehaviorActivity.class);
                 startActivity(intent);
                 break;
-
             case  R.id.fab_snack_btn:
                 intent = new Intent(this, FABSimpleActivity.class);
                 startActivity(intent);
                 break;
-
-
             case  R.id.bottom_navigaiton_simple:
                 intent = new Intent(this, BottomNavigationActivity.class);
                 startActivity(intent);
@@ -158,6 +158,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_up_by_keyboard:
                 intent = new Intent(this, BtnUpByKeyBoardActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_test_kotlin:
+                intent = new Intent(this, TestKotlinActivity.class);
                 startActivity(intent);
                 break;
 

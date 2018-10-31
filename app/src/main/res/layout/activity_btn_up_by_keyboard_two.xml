@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhouwei.md.materialdesignsamples.view.LinearLayoutView
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+      >
+        <ImageView
+            android:id="@+id/iv_top_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/author"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            />
+        <LinearLayout
+            android:id="@+id/editArea"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="136dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/please_enter"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/please_enter"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonArea"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/category_light"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/login"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/bt_login" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </com.zhouwei.md.materialdesignsamples.view.LinearLayoutView>
+
+
+</RelativeLayout>

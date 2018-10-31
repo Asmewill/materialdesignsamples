@@ -116,7 +116,28 @@
             android:theme="@style/MDTheme"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
+        <activity
+            android:name=".kotlin.TestKotlinActivity"
+            android:theme="@style/MDTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".asmewill.BtnUpByKeyBoardTwoActivity"
+            android:theme="@style/MDTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="myapp"
+                    android:path="/wakeapp"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
