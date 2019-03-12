@@ -41,9 +41,9 @@ public class TextInputSimpleActivity extends AppCompatActivity{
 
         mTextInputLayoutUser = (TextInputLayout) findViewById(R.id.text_input_layout_user);
         //设置可以计数
-        mTextInputLayoutUser.setCounterEnabled(true);
+      //  mTextInputLayoutUser.setCounterEnabled(true);
         //计数的最大值
-        mTextInputLayoutUser.setCounterMaxLength(20);
+    //    mTextInputLayoutUser.setCounterMaxLength(20);
 
         mInputEditTextUser = (EditText) findViewById(R.id.text_input_user);
 

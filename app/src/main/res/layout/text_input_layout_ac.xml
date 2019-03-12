@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
 
     >
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:navigationIcon="@mipmap/navigation_back_white"
         android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/navigation_back_white"
         app:title="TextInputLayout"
-        app:titleTextColor="@color/white"
-        />
+        app:titleTextColor="@color/white" />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_input_layout_user"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        app:counterOverflowTextAppearance="@style/TextOverCount"
-        android:textColorHint="@color/colorHint"
-        >
-         <EditText
-             android:id="@+id/text_input_user"
-             android:layout_width="match_parent"
-             android:layout_height="48dp"
-             android:hint="用户名"
-             android:inputType="text"
-             android:textColor="@color/black"
-             />
+        android:background="@drawable/login_edittext_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="8dp"
+        android:hint="用户名"
+        android:gravity="bottom"
+        app:hintTextAppearance="@style/MyStyle"
+        android:theme="@style/CustomAppTheme_textinputLayout">
+
+        <EditText
+            android:id="@+id/text_input_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:paddingLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
 
     </android.support.design.widget.TextInputLayout>
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_input_layout_phone"
         android:layout_width="match_parent"
@@ -42,20 +50,19 @@
         android:layout_marginTop="20dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-
         android:scrollbarAlwaysDrawHorizontalTrack="true"
-        android:textColorHint="@color/colorHint"
-        >
+        android:textColorHint="@color/colorHint">
+
         <EditText
             android:id="@+id/text_input_phone"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="手机号码"
             android:inputType="number"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
     </android.support.design.widget.TextInputLayout>
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_input_layout_password"
         android:layout_width="match_parent"
@@ -63,30 +70,61 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColorHint="@color/colorHint"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/colorHint"
         app:passwordToggleDrawable="@drawable/ic_eye_grey_24dp"
-        >
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorHint">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/text_input_password"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="密码"
-            android:textColor="@color/black"
             android:inputType="textPassword"
             android:singleLine="true"
-            />
+            android:textColor="@color/black" />
     </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edittext_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="8dp"
+        android:hint="用户名"
+        android:gravity="bottom"
+        app:hintTextAppearance="@style/MyStyle"
+        android:theme="@style/CustomAppTheme_textinputLayout">
+
+        <com.zhouwei.md.materialdesignsamples.view.ClearEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:paddingLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:drawableRight="@mipmap/ico_del"
+            android:paddingRight="50dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="84dp"
+        android:layout_marginRight="15dp"
         android:background="@color/buttoncolor"
         android:text="登录"
         android:textColor="@color/textColor" />
+
+
+
+
 </LinearLayout>

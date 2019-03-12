@@ -22,7 +22,6 @@ import com.zhouwei.md.materialdesignsamples.behavoir.SwipeDismissBehaviorActivit
 import com.zhouwei.md.materialdesignsamples.bottomsheetdialog.BottomSheetDialogActivity;
 import com.zhouwei.md.materialdesignsamples.cardview.CardViewSimpleActivity;
 import com.zhouwei.md.materialdesignsamples.edit.TextInputSimpleActivity;
-import com.zhouwei.md.materialdesignsamples.kotlin.TestKotlinActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.BottomNavigationActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity;
 import com.zhouwei.md.materialdesignsamples.navigation.TabActivity2;
@@ -161,8 +160,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_test_kotlin:
-                intent = new Intent(this, TestKotlinActivity.class);
-                startActivity(intent);
+//                intent = new Intent(this, TestKotlinActivity.class);
+//                startActivity(intent);
                 break;
 
         }
